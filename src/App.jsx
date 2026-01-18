@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -23,7 +23,7 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <div className="antialiased min-h-screen bg-ananta-bg text-white selection:bg-ananta-gold selection:text-black">
         <div className="bg-noise"></div>
         <ScrollToTop />
