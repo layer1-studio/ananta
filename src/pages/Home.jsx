@@ -24,7 +24,7 @@ const Home = () => {
                     <p className="text-gray-400 font-light text-lg italic mb-6">
                         "True influence is not about volume—it is about precision. We do not design for the feed; we design for the legacy."
                     </p>
-                    <p className="text-white font-serif">Kavisha Ratnayake</p>
+                    <p className="text-white font-serif">Kavisha Ratnayaka</p>
                     <p className="text-ananta-gold text-xs uppercase tracking-widest mt-2">Founder</p>
                 </div>
             </section>

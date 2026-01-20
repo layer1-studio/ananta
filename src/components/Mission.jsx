@@ -76,7 +76,7 @@ const Mission = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="relative bg-white/5 p-10 border border-white/10"
                     >
-                        <h3 className="text-ananta-gold font-serif text-3xl mb-2">Kavisha Ratnayake</h3>
+                        <h3 className="text-ananta-gold font-serif text-3xl mb-2">Kavisha Ratnayaka</h3>
                         <p className="text-gray-500 text-sm uppercase mb-8 tracking-widest">Founder</p>
 
                         <div className="space-y-6 text-gray-300 font-light leading-relaxed">
@@ -84,7 +84,7 @@ const Mission = () => {
                                 With over a decade of experience in media, publishing, and strategic communication, Kavisha founded Ananta to address a gap in the market: the need for narrative architecture that goes beyond simple PR.
                             </p>
                             <p>
-                                Having worked with global brands, political figures, and legacy institutions, she understands that true influence is not about volume—it is about precision.
+                                Having worked with global brands, political figures, and legacy institutions, he understands that true influence is not about volume—it is about precision.
                             </p>
                         </div>
                     </motion.div>
