@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import { projects } from '../data/projects';
+import SEO from '../components/SEO';
 
 const ProjectDetailPage = () => {
     const { id } = useParams();
@@ -21,6 +22,7 @@ const ProjectDetailPage = () => {
 
     return (
         <div className="bg-ananta-bg text-white min-h-screen">
+            <SEO title={project.title} description={project.shortDescription} />
             {/* Hero Section */}
             <div className="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
                 <img

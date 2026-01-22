@@ -3,10 +3,12 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { projects } from '../data/projects';
+import SEO from '../components/SEO';
 
 const ProjectsPage = () => {
     return (
         <div className="pt-24 min-h-screen bg-ananta-bg text-white">
+            <SEO title="Selected Projects" description="Explore our case studies in narrative strategy, cultural engineering, and lasting influence." />
             {/* Header */}
             <section className="py-20 px-6 max-w-7xl mx-auto">
                 <motion.div

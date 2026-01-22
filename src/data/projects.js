@@ -1,3 +1,20 @@
+/**
+ * ==========================================
+ * HOW TO ADD A NEW PROJECT
+ * ==========================================
+ * 1. Copy the structure of an existing object between { and }.
+ * 2. Paste it into the `projects` array below.
+ * 3. Update the fields:
+ *    - id: A unique name (e.g., 'new-project-name'). Used in the URL.
+ *    - title: Visible project name.
+ *    - shortDescription: One sentence summary for the list page.
+ *    - fullDescription: Detailed text. Use `\n` or breaks for paragraphs.
+ *    - coverImage: Import an image at the top and use the variable name here.
+ *    - galleryImages: An array of imported images [img1, img2].
+ *    - videoUrl: Optional YouTube embed URL (or null).
+ *    - outcomes: Array of bullet points ['Outcome 1', 'Outcome 2'].
+ *    - scope: String listing services provided.
+ */
 
 // Placeholder images - using Ananta's existing visual style
 // Ideally these would be specific project images

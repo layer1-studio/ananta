@@ -1,3 +1,16 @@
+/**
+ * ==========================================
+ * HOW TO ADD A MAINTAINED PAGE
+ * ==========================================
+ * 1. Copy an object from the list below.
+ * 2. Paste it into the `maintainedPages` array.
+ * 3. Update fields:
+ *    - id: Unique identifier.
+ *    - title: Client or page name.
+ *    - url: The external link (e.g., 'https://client.com').
+ *    - description: Brief details about the work.
+ *    - thumbnail: Imported image variable.
+ */
 
 // Placeholder images using existing assets
 import heroBg from '../assets/hero-bg.png';

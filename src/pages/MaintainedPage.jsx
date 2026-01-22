@@ -2,10 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { maintainedPages } from '../data/maintained';
+import SEO from '../components/SEO';
 
 const MaintainedPage = () => {
     return (
         <div className="pt-24 min-h-screen bg-ananta-bg text-white">
+            <SEO title="Maintained Client Pages" description="A directory of active digital properties and narratives currently managed by Ananta." />
             {/* Header */}
             <section className="py-20 px-6 max-w-7xl mx-auto">
                 <motion.div
