@@ -35,7 +35,7 @@ const Philosophy = () => {
                         </p>
                         <div className="bg-white/5 p-6 border-l-2 border-ananta-gold">
                             <p className="text-gray-300 text-base">
-                                Our work is not reactive or attention-seeking; it is <span className="text-white font-normal">precise, structured, and grounded in purpose</span>. Creative direction emerges from clarity. We do not amplify noise—we shape narratives that settle naturally into their space.
+                                Our work is not reactive or attention-seeking; it is <span className="text-white font-normal">precise, structured, and grounded in purpose</span>. Creative direction emerges from clarity. We do not amplify noise - we shape narratives that settle naturally into their space.
                             </p>
                         </div>
                     </div>
