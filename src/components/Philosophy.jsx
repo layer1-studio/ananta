@@ -16,7 +16,7 @@ const Philosophy = () => {
                     <div className="md:col-span-5 text-left">
                         <p className="text-ananta-gold uppercase tracking-[0.2em] mb-6 font-medium text-sm">Our Philosophy</p>
                         <h2 className="text-4xl md:text-6xl font-serif text-white mb-8 leading-tight">
-                            Why Pick <br /><span className="text-gray-500">Ananta?</span>
+                            Why Choose <br /><span className="text-gray-500">Ananta?</span>
                         </h2>
                         <div className="w-16 h-[1px] bg-ananta-gold/50 mb-8"></div>
 
