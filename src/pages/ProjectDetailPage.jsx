@@ -69,11 +69,11 @@ const ProjectDetailPage = () => {
 
                         {/* Local Video File */}
                         {project.videoFile && (
-                            <div className="mt-16 bg-black aspect-video rounded-sm overflow-hidden border border-white/10">
+                            <div className="mt-16 rounded-sm overflow-hidden border border-white/10 w-full flex justify-center bg-black/20 text-center">
                                 <video
                                     src={project.videoFile}
                                     controls
-                                    className="w-full h-full"
+                                    className="max-h-[75vh] w-full"
                                 >
                                     Your browser does not support the video tag.
                                 </video>
@@ -93,36 +93,52 @@ const ProjectDetailPage = () => {
                             </div>
                         )}
 
-                        {/* Image Gallery */}
-                        {project.galleryImages && project.galleryImages.length > 0 && (
-                            <div className="mt-16 space-y-8">
-                                {project.galleryImages.map((img, idx) => (
-                                    <div key={idx} className="relative overflow-hidden group">
-                                        <img
-                                            src={img}
-                                            alt={`Gallery ${idx + 1}`}
-                                            className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700"
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        )}
-
-                        {/* Video Gallery */}
-                        {project.galleryVideos && project.galleryVideos.length > 0 && (
-                            <div className="mt-16 space-y-8">
-                                <h3 className="text-ananta-gold uppercase tracking-widest text-xs font-bold mb-4">Additional Media</h3>
-                                {project.galleryVideos.map((vid, idx) => (
-                                    <div key={idx} className="relative bg-black aspect-video rounded-sm overflow-hidden border border-white/10">
-                                        <video
-                                            src={vid}
-                                            controls
-                                            className="w-full h-full"
+                        {/* Image & Video Gallery Grid */}
+                        {(project.galleryImages?.length > 0 || project.galleryVideos?.length > 0) && (
+                            <div className="mt-20">
+                                <h3 className="text-ananta-gold uppercase tracking-widest text-xs font-bold mb-8">Project Gallery</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    {/* Images */}
+                                    {project.galleryImages?.map((img, idx) => (
+                                        <motion.div
+                                            key={`img-${idx}`}
+                                            initial={{ opacity: 0, x: -30 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ duration: 0.6, delay: (idx % 2) * 0.1 }}
+                                            className="relative overflow-hidden aspect-[4/3] bg-gray-900/50"
                                         >
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                ))}
+                                            <img
+                                                src={img}
+                                                alt={`Gallery ${idx + 1}`}
+                                                className="w-full h-full object-cover"
+                                                loading="lazy"
+                                            />
+                                        </motion.div>
+                                    ))}
+
+                                    {/* Videos */}
+                                    {project.galleryVideos?.map((vid, idx) => (
+                                        <motion.div
+                                            key={`vid-${idx}`}
+                                            initial={{ opacity: 0, x: -30 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ duration: 0.6, delay: (idx % 2) * 0.1 }}
+                                            className="relative rounded-sm overflow-hidden bg-gray-900/50 min-h-[200px]"
+                                        >
+                                            <video
+                                                src={vid}
+                                                controls
+                                                playsInline
+                                                preload="metadata"
+                                                className="w-full h-auto"
+                                            >
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </motion.div>
+                                    ))}
+                                </div>
                             </div>
                         )}
                     </div>
