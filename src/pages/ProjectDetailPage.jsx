@@ -99,7 +99,7 @@ const ProjectDetailPage = () => {
                                 <h3 className="text-ananta-gold uppercase tracking-widest text-xs font-bold mb-8">Project Gallery</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     {/* Videos */}
-                                    {project.galleryVideos?.map((vid, idx) => (
+                                    {project.galleryVideos?.filter(vid => vid !== project.videoFile).map((vid, idx) => (
                                         <motion.div
                                             key={`vid-${idx}`}
                                             initial={{ opacity: 0, x: -30 }}
@@ -121,7 +121,7 @@ const ProjectDetailPage = () => {
                                     ))}
 
                                     {/* Images */}
-                                    {project.galleryImages?.map((img, idx) => (
+                                    {project.galleryImages?.filter(img => img !== project.coverImage).map((img, idx) => (
                                         <motion.div
                                             key={`img-${idx}`}
                                             initial={{ opacity: 0, x: -30 }}

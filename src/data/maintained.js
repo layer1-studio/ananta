@@ -23,14 +23,14 @@ export const maintainedPages = [
     {
         id: 'empower-lk',
         title: 'Empower.lk',
-        url: 'https://www.instagram.com/empower.lk?igsh=MTdjcGZmYTBoNm1pZw==',
+        url: 'https://www.instagram.com/empower.lk',
         description: 'Empower.lk focuses on strategic development and community impact through disciplined social initiatives.',
         thumbnail: empowerImg
     },
     {
         id: 'economist-lk',
         title: 'Economist.lk',
-        url: 'https://www.instagram.com/economist.lk?igsh=MTExejh5cGU1b2tjbw==',
+        url: 'https://www.instagram.com/economist.lk',
         description: 'Economist.lk provides rigorous analysis and insights into national and global economic trends.',
         thumbnail: economistImg
     }

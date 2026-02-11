@@ -136,7 +136,7 @@ export const projects = [
         videoUrl: null,
         videoFile: bruxVid1,
         galleryVideos: [
-            bruxVid1, bruxVid2, bruxVid3, bruxVid4, bruxVid5
+            bruxVid2, bruxVid3, bruxVid4, bruxVid5
         ],
         outcomes: [
             'High-fidelity visual asset library',
@@ -177,18 +177,13 @@ export const projects = [
             
             Through a blend of high-definition cinematography and editorial photography, we crafted a brand presence that speaks to sophistication and enduring beauty. This project showcases our ability to translate the tangible allure of luxury goods into a digital experience that resonates with discerning audiences.
         `,
-        coverImage: valImg3, // Selected an edited image for cover
-        galleryImages: [
-            valImg1, valImg2, valImg3, valImg4, valImg5,
-            valImg6, valImg7, valImg8, valImg9, valImg10,
-            valImg11, valImg12, valImg13, valImg14, valImg15
-        ],
+        coverImage: missionVisual, // Using visual as no images found
+        galleryImages: [],
         galleryVideos: [
-            valVidExtra1, valVidExtra2, valVidExtra3,
-            valentina1, valentina2, valentina3, valentina4, valentina5
+            valVidExtra1, valVidExtra2, valentina1, valentina2, valentina4, valentina5
         ],
         videoUrl: null,
-        videoFile: valVidExtra3, // Using one of the main optimized cuts
+        videoFile: valVidExtra3, // Using optimized cut
         outcomes: [
             'Luxury Brand Positioning',
             'High-End Product Photography',
