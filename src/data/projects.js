@@ -96,9 +96,11 @@ import bruxImg38 from '../assets/projects/BruxWaffles/Photos/20260129_141918.jpg
 
 
 // Sigiriya Hornets Project Assets
-import sigiriyaVid1 from '../assets/projects/SigiriyaHornets/sigiriya1.mp4';
+// import sigiriyaVid1 from '../assets/projects/SigiriyaHornets/sigiriya1.mp4'; // Excluded (112MB)
 import sigiriyaVid2 from '../assets/projects/SigiriyaHornets/sigiriya2.mp4';
 import sigiriyaVid3 from '../assets/projects/SigiriyaHornets/sigiriya3.mp4';
+
+const sigiriyaVid1 = sigiriyaVid2; // Use Vid2 as placeholder for Vid1
 
 export const projects = [
     {
@@ -149,7 +151,7 @@ export const projects = [
         coverImage: missionVisual, // Placeholder as no images were found
         galleryImages: [],
         galleryVideos: [
-            sigiriyaVid1, sigiriyaVid2, sigiriyaVid3
+            sigiriyaVid2, sigiriyaVid3
         ],
         videoUrl: null,
         videoFile: sigiriyaVid1, // Using one of the clips as the main video
