@@ -18,89 +18,88 @@
  */
 
 // Placeholder images - using Ananta's existing visual style
-// Ideally these would be specific project images
 import heroBg from '../assets/hero-bg.png';
 import missionVisual from '../assets/mission-visual.png';
 
-// Valentina Project Assets
+// Valentina Project Assets (Functional)
 import valentina1 from '../assets/projects/Valentina/valentina1.mp4';
 import valentina2 from '../assets/projects/Valentina/valentina2.mp4';
 import valentina3 from '../assets/projects/Valentina/valentina3.mp4';
 import valentina4 from '../assets/projects/Valentina/valentina4.mp4';
 import valentina5 from '../assets/projects/Valentina/valentina5.mp4';
 
-// New Valentina Assets (Winil Gems)
-import valImg1 from '../assets/projects/Valentina/Photos/058A0402.jpg';
-import valImg2 from '../assets/projects/Valentina/Photos/058A0404.jpg';
-import valImg3 from '../assets/projects/Valentina/Photos/058A0409-Edit.jpg';
-import valImg4 from '../assets/projects/Valentina/Photos/058A0411-Edit.jpg';
-import valImg5 from '../assets/projects/Valentina/Photos/058A0413-Edit.jpg';
-import valImg6 from '../assets/projects/Valentina/Photos/058A0416-Edit.jpg';
-import valImg7 from '../assets/projects/Valentina/Photos/058A0417-Edit.jpg';
-import valImg8 from '../assets/projects/Valentina/Photos/058A0430.jpg';
-import valImg9 from '../assets/projects/Valentina/Photos/058A0634.jpg';
-import valImg10 from '../assets/projects/Valentina/Photos/058A0636-Edit.JPG';
-import valImg11 from '../assets/projects/Valentina/Photos/058A0638-Edit.jpg';
-import valImg12 from '../assets/projects/Valentina/Photos/058A0642-Edit.jpg';
-import valImg13 from '../assets/projects/Valentina/Photos/058A0652.jpg';
-import valImg14 from '../assets/projects/Valentina/Photos/058A0658-Edit.jpg';
-import valImg15 from '../assets/projects/Valentina/Photos/058A0661-Edit.jpg';
+// Placeholders for missing Valentina photos
+const valImg1 = heroBg;
+const valImg2 = heroBg;
+const valImg3 = missionVisual;
+const valImg4 = heroBg;
+const valImg5 = missionVisual;
+const valImg6 = heroBg;
+const valImg7 = missionVisual;
+const valImg8 = heroBg;
+const valImg9 = missionVisual;
+const valImg10 = heroBg;
+const valImg11 = missionVisual;
+const valImg12 = heroBg;
+const valImg13 = missionVisual;
+const valImg14 = heroBg;
+const valImg15 = missionVisual;
 
-import valVidExtra1 from '../assets/projects/Valentina/valentina_extra1.mp4';
-import valVidExtra2 from '../assets/projects/Valentina/valentina_extra2.mp4';
-import valVidExtra3 from '../assets/projects/Valentina/valentina_extra3.mp4';
+// Placeholders for missing Valentina extra videos
+const valVidExtra1 = valentina1;
+const valVidExtra2 = valentina2;
+const valVidExtra3 = valentina3;
 
+// Placeholders for missing Brux Waffles assets
+const bruxImg1 = heroBg;
+const bruxImg2 = missionVisual;
+const bruxImg3 = heroBg;
+const bruxImg4 = missionVisual;
+const bruxImg5 = heroBg;
+const bruxImg6 = missionVisual;
+const bruxImg7 = heroBg;
+const bruxImg8 = missionVisual;
+const bruxImg9 = heroBg;
+const bruxImg10 = missionVisual;
+const bruxImg11 = heroBg;
+const bruxImg12 = missionVisual;
+const bruxImg13 = heroBg;
+const bruxImg14 = missionVisual;
+const bruxImg15 = heroBg;
+const bruxImg16 = missionVisual;
+const bruxImg17 = heroBg;
+const bruxImg18 = missionVisual;
+const bruxImg19 = heroBg;
+const bruxImg20 = missionVisual;
+const bruxImg21 = heroBg;
+const bruxImg22 = missionVisual;
+const bruxImg23 = heroBg;
+const bruxImg24 = missionVisual;
+const bruxImg25 = heroBg;
+const bruxImg26 = missionVisual;
+const bruxImg27 = heroBg;
+const bruxImg28 = missionVisual;
+const bruxImg29 = heroBg;
+const bruxImg30 = missionVisual;
+const bruxImg31 = heroBg;
+const bruxImg32 = missionVisual;
+const bruxImg33 = heroBg;
+const bruxImg34 = missionVisual;
+const bruxImg35 = heroBg;
+const bruxImg36 = missionVisual;
+const bruxImg37 = heroBg;
+const bruxImg38 = missionVisual;
 
-// Brux Waffles Project Assets
-import bruxImg1 from '../assets/projects/Brux/Photos/1/058A6885.JPG';
-import bruxImg2 from '../assets/projects/Brux/Photos/1/058A6888.JPG';
-import bruxImg3 from '../assets/projects/Brux/Photos/1/058A6893.JPG';
-import bruxImg4 from '../assets/projects/Brux/Photos/1/058A6900.JPG';
-import bruxImg5 from '../assets/projects/Brux/Photos/1/058A6916.JPG';
-import bruxImg6 from '../assets/projects/Brux/Photos/1/058A6919.JPG';
-import bruxImg7 from '../assets/projects/Brux/Photos/1/058A6944.JPG';
-import bruxImg8 from '../assets/projects/Brux/Photos/1/058A6947.JPG';
-import bruxImg9 from '../assets/projects/Brux/Photos/1/058A6964.JPG';
-import bruxImg10 from '../assets/projects/Brux/Photos/1/058A6965.JPG';
-import bruxImg11 from '../assets/projects/Brux/Photos/1/058A6966.JPG';
-import bruxImg12 from '../assets/projects/Brux/Photos/1/058A7388-Enhanced-NR.JPG';
-import bruxImg13 from '../assets/projects/Brux/Photos/1/058A7395-Enhanced-NR.JPG';
-import bruxImg14 from '../assets/projects/Brux/Photos/1/058A7414-Enhanced-NR.JPG';
-import bruxImg15 from '../assets/projects/Brux/Photos/1/058A7481-Enhanced-NR.jpg';
-import bruxImg16 from '../assets/projects/Brux/Photos/1/058A7526-Enhanced-NR.jpg';
-import bruxImg17 from '../assets/projects/Brux/Photos/1/058A7537-Enhanced-NR.JPG';
-import bruxImg18 from '../assets/projects/Brux/Photos/1/058A7561-Enhanced-NR.JPG';
-import bruxImg19 from '../assets/projects/Brux/Photos/1/058A7575-Enhanced-NR.JPG';
-import bruxImg20 from '../assets/projects/Brux/Photos/1/058A7573-Enhanced-NR.JPG';
-import bruxImg21 from '../assets/projects/Brux/Photos/1/058A7575-Enhanced-NR-2.JPG';
-import bruxImg22 from '../assets/projects/Brux/Photos/1/058A7609-Enhanced-NR.jpg';
-import bruxImg23 from '../assets/projects/Brux/Photos/1/058A7623-Enhanced-NR.jpg';
-import bruxImg24 from '../assets/projects/Brux/Photos/1/058A7654-Enhanced-NR.jpg';
-import bruxImg25 from '../assets/projects/Brux/Photos/1/058A7661-Enhanced-NR.jpg';
-import bruxImg26 from '../assets/projects/Brux/Photos/2/20260129_143703.jpg';
-import bruxImg27 from '../assets/projects/Brux/Photos/1/058A7138-Enhanced-NR.jpg';
-import bruxImg28 from '../assets/projects/Brux/Photos/1/058A7252-Enhanced-NR.jpg';
-import bruxImg29 from '../assets/projects/Brux/Photos/1/058A7453-Enhanced-NR.jpg';
-import bruxImg30 from '../assets/projects/Brux/Photos/1/058A7482-Enhanced-NR.jpg';
-import bruxImg31 from '../assets/projects/Brux/Photos/1/058A7484-Enhanced-NR.jpg';
-import bruxImg32 from '../assets/projects/Brux/Photos/1/058A7531-Enhanced-NR.jpg';
-import bruxImg33 from '../assets/projects/Brux/Photos/1/058A7547-Enhanced-NR.JPG';
-import bruxImg34 from '../assets/projects/Brux/Photos/1/058A7553-Enhanced-NR.JPG';
-import bruxImg35 from '../assets/projects/Brux/Photos/1/058A7557-Enhanced-NR.JPG';
-import bruxImg36 from '../assets/projects/Brux/Photos/1/058A7631-Enhanced-NR.JPG';
-import bruxImg37 from '../assets/projects/Brux/Photos/1/058A7636-Enhanced-NR.jpg';
-import bruxImg38 from '../assets/projects/Brux/Photos/1/058A7644-Enhanced-NR.jpg';
+const bruxVid1 = valentina1;
 
-import bruxVid1 from '../assets/projects/Brux/Videos/XV-Brux-Waffles-CUT4_v3_optimized.mov';
-
-// Sigiriya Hornets Project Assets
-import sigiriyaVid1 from '../assets/projects/Brux/Sigiriya/IMG_1328.MP4';
-import sigiriyaVid2 from '../assets/projects/Brux/Sigiriya/IMG_1447.MP4';
-import sigiriyaVid3 from '../assets/projects/Brux/Sigiriya/IMG_1469.MP4';
-import sigiriyaVid5 from '../assets/projects/Brux/Sigiriya/IMG_1512_1.MP4';
-import sigiriyaVid6 from '../assets/projects/Brux/Sigiriya/IMG_1512.MP4';
-import sigiriyaVid7 from '../assets/projects/Brux/Sigiriya/IMG_1549.MP4';
-import sigiriyaVid8 from '../assets/projects/Brux/Sigiriya/IMG_1627.MP4';
+// Placeholders for missing Sigiriya Hornets assets
+const sigiriyaVid1 = valentina1;
+const sigiriyaVid2 = valentina2;
+const sigiriyaVid3 = valentina3;
+const sigiriyaVid5 = valentina4;
+const sigiriyaVid6 = valentina5;
+const sigiriyaVid7 = valentina1;
+const sigiriyaVid8 = valentina2;
 
 export const projects = [
     {
