@@ -180,7 +180,7 @@ export const projects = [
         coverImage: missionVisual, // Using visual as no images found
         galleryImages: [],
         galleryVideos: [
-            valVidExtra1, valVidExtra2, valentina1, valentina2, valentina4, valentina5
+            valentina1, valentina2, valentina4, valentina5
         ],
         videoUrl: null,
         videoFile: valVidExtra3, // Using optimized cut
