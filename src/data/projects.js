@@ -21,14 +21,14 @@
 import heroBg from '../assets/hero-bg.png';
 import missionVisual from '../assets/mission-visual.png';
 
-// Valentina Project Assets (Functional)
+// Valentina Project Assets
 import valentina1 from '../assets/projects/Valentina/valentina1.mp4';
 import valentina2 from '../assets/projects/Valentina/valentina2.mp4';
 import valentina3 from '../assets/projects/Valentina/valentina3.mp4';
 import valentina4 from '../assets/projects/Valentina/valentina4.mp4';
 import valentina5 from '../assets/projects/Valentina/valentina5.mp4';
 
-// Placeholders for missing Valentina photos
+// Use placeholders for photos until they arrive
 const valImg1 = heroBg;
 const valImg2 = heroBg;
 const valImg3 = missionVisual;
@@ -45,12 +45,15 @@ const valImg13 = missionVisual;
 const valImg14 = heroBg;
 const valImg15 = missionVisual;
 
-// Placeholders for missing Valentina extra videos
-const valVidExtra1 = valentina1;
-const valVidExtra2 = valentina2;
+const valVidExtra1 = valentina4;
+const valVidExtra2 = valentina5;
 const valVidExtra3 = valentina3;
 
-// Placeholders for missing Brux Waffles assets
+// Brux Waffles Project Assets
+import bruxVid1 from '../assets/projects/BruxWaffles/brux1.mov';
+import bruxVid2 from '../assets/projects/BruxWaffles/brux2.mov';
+import bruxVid3 from '../assets/projects/BruxWaffles/brux3.mov';
+
 const bruxImg1 = heroBg;
 const bruxImg2 = missionVisual;
 const bruxImg3 = heroBg;
@@ -90,16 +93,11 @@ const bruxImg36 = missionVisual;
 const bruxImg37 = heroBg;
 const bruxImg38 = missionVisual;
 
-const bruxVid1 = valentina1;
 
-// Placeholders for missing Sigiriya Hornets assets
-const sigiriyaVid1 = valentina1;
-const sigiriyaVid2 = valentina2;
-const sigiriyaVid3 = valentina3;
-const sigiriyaVid5 = valentina4;
-const sigiriyaVid6 = valentina5;
-const sigiriyaVid7 = valentina1;
-const sigiriyaVid8 = valentina2;
+// Sigiriya Hornets Project Assets
+import sigiriyaVid1 from '../assets/projects/SigiriyaHornets/sigiriya1.mp4';
+import sigiriyaVid2 from '../assets/projects/SigiriyaHornets/sigiriya2.mp4';
+import sigiriyaVid3 from '../assets/projects/SigiriyaHornets/sigiriya3.mp4';
 
 export const projects = [
     {
@@ -128,6 +126,9 @@ export const projects = [
         ],
         videoUrl: null,
         videoFile: bruxVid1,
+        galleryVideos: [
+            bruxVid1, bruxVid2, bruxVid3
+        ],
         outcomes: [
             'High-fidelity visual asset library',
             'Sensory-driven narrative strategy',
@@ -147,12 +148,10 @@ export const projects = [
         coverImage: missionVisual, // Placeholder as no images were found
         galleryImages: [],
         galleryVideos: [
-            sigiriyaVid1, sigiriyaVid2, sigiriyaVid3,
-            sigiriyaVid5, sigiriyaVid6,
-            sigiriyaVid7, sigiriyaVid8
+            sigiriyaVid1, sigiriyaVid2, sigiriyaVid3
         ],
         videoUrl: null,
-        videoFile: sigiriyaVid7, // Using one of the clips as the main video
+        videoFile: sigiriyaVid1, // Using one of the clips as the main video
         outcomes: [
             'Sports documentation',
             'Dynamic motion capture',
