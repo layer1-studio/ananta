@@ -13,6 +13,18 @@ const services = [
     {
         title: "Media Execution & Amplification",
         description: "We execute selectively and deliberately. This includes social media management, campaign rollouts, content ecosystems, and performance-led amplification. Execution is guided by strategy, not volume. We prioritise precision over noise."
+    },
+    {
+        title: "Website Designing",
+        description: "We create digital environments that prioritise narrative flow and functional elegance, ensuring your online presence is a direct extension of your strategic identity."
+    },
+    {
+        title: "Content Management",
+        description: "Disciplined management of your communication ecosystem. We ensure consistency, timing, and narrative alignment across all platforms, treating content as a strategic asset."
+    },
+    {
+        title: "Photography & Videography",
+        description: "High-fidelity visual production. We capture and curate imagery and motion that communicate positioning, authority, and long-term credibility through a refined lens."
     }
 ];
 

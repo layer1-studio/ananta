@@ -15,27 +15,22 @@
 // Placeholder images using existing assets
 import heroBg from '../assets/hero-bg.png';
 import missionVisual from '../assets/mission-visual.png';
+import empowerImg from '../assets/pages/empower.jpg';
+import economistImg from '../assets/pages/economist.jpg';
 
 export const maintainedPages = [
     {
-        id: 'legacy-arts-council',
-        title: 'The Legacy Arts Council',
-        url: 'https://example.com/arts-council', // Placeholder
-        description: 'Ongoing digital strategy and content management for the national arts body.',
-        thumbnail: missionVisual
+        id: 'empower-lk',
+        title: 'Empower.lk',
+        url: 'https://www.instagram.com/empower.lk?igsh=MTdjcGZmYTBoNm1pZw==',
+        description: 'Empower.lk focuses on strategic development and community impact through disciplined social initiatives.',
+        thumbnail: empowerImg
     },
     {
-        id: 'future-policy-inst',
-        title: 'Future Policy Institute',
-        url: 'https://example.com/policy', // Placeholder
-        description: 'Monthly editorial curation and policy brief publication.',
-        thumbnail: heroBg
-    },
-    {
-        id: 'eco-ventures',
-        title: 'EcoVentures Global',
-        url: 'https://example.com/ecoventures', // Placeholder
-        description: 'Full-stack narrative maintenance including press releases and impact reports.',
-        thumbnail: missionVisual
+        id: 'economist-lk',
+        title: 'Economist.lk',
+        url: 'https://www.instagram.com/economist.lk?igsh=MTExejh5cGU1b2tjbw==',
+        description: 'Economist.lk provides rigorous analysis and insights into national and global economic trends.',
+        thumbnail: economistImg
     }
 ];

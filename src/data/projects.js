@@ -29,90 +29,164 @@ import valentina3 from '../assets/projects/Valentina/valentina3.mp4';
 import valentina4 from '../assets/projects/Valentina/valentina4.mp4';
 import valentina5 from '../assets/projects/Valentina/valentina5.mp4';
 
+// New Valentina Assets (Winil Gems)
+import valImg1 from '../assets/projects/Valentina/Photos/058A0402.jpg';
+import valImg2 from '../assets/projects/Valentina/Photos/058A0404.jpg';
+import valImg3 from '../assets/projects/Valentina/Photos/058A0409-Edit.jpg';
+import valImg4 from '../assets/projects/Valentina/Photos/058A0411-Edit.jpg';
+import valImg5 from '../assets/projects/Valentina/Photos/058A0413-Edit.jpg';
+import valImg6 from '../assets/projects/Valentina/Photos/058A0416-Edit.jpg';
+import valImg7 from '../assets/projects/Valentina/Photos/058A0417-Edit.jpg';
+import valImg8 from '../assets/projects/Valentina/Photos/058A0430.jpg';
+import valImg9 from '../assets/projects/Valentina/Photos/058A0634.jpg';
+import valImg10 from '../assets/projects/Valentina/Photos/058A0636-Edit.JPG';
+import valImg11 from '../assets/projects/Valentina/Photos/058A0638-Edit.jpg';
+import valImg12 from '../assets/projects/Valentina/Photos/058A0642-Edit.jpg';
+import valImg13 from '../assets/projects/Valentina/Photos/058A0652.jpg';
+import valImg14 from '../assets/projects/Valentina/Photos/058A0658-Edit.jpg';
+import valImg15 from '../assets/projects/Valentina/Photos/058A0661-Edit.jpg';
+
+import valVidExtra1 from '../assets/projects/Valentina/valentina_extra1.mp4';
+import valVidExtra2 from '../assets/projects/Valentina/valentina_extra2.mp4';
+import valVidExtra3 from '../assets/projects/Valentina/valentina_extra3.mp4';
+
+
+// Brux Waffles Project Assets
+import bruxImg1 from '../assets/projects/Brux/Photos/1/058A6885.JPG';
+import bruxImg2 from '../assets/projects/Brux/Photos/1/058A6888.JPG';
+import bruxImg3 from '../assets/projects/Brux/Photos/1/058A6893.JPG';
+import bruxImg4 from '../assets/projects/Brux/Photos/1/058A6900.JPG';
+import bruxImg5 from '../assets/projects/Brux/Photos/1/058A6916.JPG';
+import bruxImg6 from '../assets/projects/Brux/Photos/1/058A6919.JPG';
+import bruxImg7 from '../assets/projects/Brux/Photos/1/058A6944.JPG';
+import bruxImg8 from '../assets/projects/Brux/Photos/1/058A6947.JPG';
+import bruxImg9 from '../assets/projects/Brux/Photos/1/058A6964.JPG';
+import bruxImg10 from '../assets/projects/Brux/Photos/1/058A6965.JPG';
+import bruxImg11 from '../assets/projects/Brux/Photos/1/058A6966.JPG';
+import bruxImg12 from '../assets/projects/Brux/Photos/1/058A7388-Enhanced-NR.JPG';
+import bruxImg13 from '../assets/projects/Brux/Photos/1/058A7395-Enhanced-NR.JPG';
+import bruxImg14 from '../assets/projects/Brux/Photos/1/058A7414-Enhanced-NR.JPG';
+import bruxImg15 from '../assets/projects/Brux/Photos/1/058A7481-Enhanced-NR.jpg';
+import bruxImg16 from '../assets/projects/Brux/Photos/1/058A7526-Enhanced-NR.jpg';
+import bruxImg17 from '../assets/projects/Brux/Photos/1/058A7537-Enhanced-NR.JPG';
+import bruxImg18 from '../assets/projects/Brux/Photos/1/058A7561-Enhanced-NR.JPG';
+import bruxImg19 from '../assets/projects/Brux/Photos/1/058A7575-Enhanced-NR.JPG';
+import bruxImg20 from '../assets/projects/Brux/Photos/1/058A7573-Enhanced-NR.JPG';
+import bruxImg21 from '../assets/projects/Brux/Photos/1/058A7575-Enhanced-NR-2.JPG';
+import bruxImg22 from '../assets/projects/Brux/Photos/1/058A7609-Enhanced-NR.jpg';
+import bruxImg23 from '../assets/projects/Brux/Photos/1/058A7623-Enhanced-NR.jpg';
+import bruxImg24 from '../assets/projects/Brux/Photos/1/058A7654-Enhanced-NR.jpg';
+import bruxImg25 from '../assets/projects/Brux/Photos/1/058A7661-Enhanced-NR.jpg';
+import bruxImg26 from '../assets/projects/Brux/Photos/2/20260129_143703.jpg';
+import bruxImg27 from '../assets/projects/Brux/Photos/1/058A7138-Enhanced-NR.jpg';
+import bruxImg28 from '../assets/projects/Brux/Photos/1/058A7252-Enhanced-NR.jpg';
+import bruxImg29 from '../assets/projects/Brux/Photos/1/058A7453-Enhanced-NR.jpg';
+import bruxImg30 from '../assets/projects/Brux/Photos/1/058A7482-Enhanced-NR.jpg';
+import bruxImg31 from '../assets/projects/Brux/Photos/1/058A7484-Enhanced-NR.jpg';
+import bruxImg32 from '../assets/projects/Brux/Photos/1/058A7531-Enhanced-NR.jpg';
+import bruxImg33 from '../assets/projects/Brux/Photos/1/058A7547-Enhanced-NR.JPG';
+import bruxImg34 from '../assets/projects/Brux/Photos/1/058A7553-Enhanced-NR.JPG';
+import bruxImg35 from '../assets/projects/Brux/Photos/1/058A7557-Enhanced-NR.JPG';
+import bruxImg36 from '../assets/projects/Brux/Photos/1/058A7631-Enhanced-NR.JPG';
+import bruxImg37 from '../assets/projects/Brux/Photos/1/058A7636-Enhanced-NR.jpg';
+import bruxImg38 from '../assets/projects/Brux/Photos/1/058A7644-Enhanced-NR.jpg';
+
+import bruxVid1 from '../assets/projects/Brux/Videos/XV-Brux-Waffles-CUT4_v3_optimized.mov';
+
+// Sigiriya Hornets Project Assets
+import sigiriyaVid1 from '../assets/projects/Brux/Sigiriya/IMG_1328.MP4';
+import sigiriyaVid2 from '../assets/projects/Brux/Sigiriya/IMG_1447.MP4';
+import sigiriyaVid3 from '../assets/projects/Brux/Sigiriya/IMG_1469.MP4';
+import sigiriyaVid5 from '../assets/projects/Brux/Sigiriya/IMG_1512_1.MP4';
+import sigiriyaVid6 from '../assets/projects/Brux/Sigiriya/IMG_1512.MP4';
+import sigiriyaVid7 from '../assets/projects/Brux/Sigiriya/IMG_1549.MP4';
+import sigiriyaVid8 from '../assets/projects/Brux/Sigiriya/IMG_1627.MP4';
+
 export const projects = [
     {
-        id: 'global-narrative-reset',
-        title: 'Global Narrative Reset',
-        shortDescription: 'Strategic repositioning for a legacy financial institution facing digital disruption.',
+        id: 'brux-waffles',
+        title: 'Brux Waffles',
+        shortDescription: 'Elevating the sensory appeal of premium waffles through high-fidelity visual storytelling.',
         fullDescription: `
-            We partnered with a 100-year-old financial institution to redefine their public narrative in the age of decentralized finance. 
+            Brux Waffles represents a convergence of culinary art and narrative precision. Our mandate was to capture the disciplined craftsmanship behind every waffle, translating taste and texture into a compelling visual language.
             
-            The challenge was not just visual rebrand, but a complete overhaul of how they communicated trust, stability, and innovation. We conducted deep-dive workshops with leadership, analyzed market sentiment, and crafted a new "Trust in Motion" narrative framework that now guides all their external communications.
+            We focused on the "sensory narrative" — the steam, the crunch, and the meticulous layering of ingredients. Through a series of high-definition video captures and macro photography, we built a presence for Brux that prioritises quality over volume.
             
-            This project resulted in a 40% increase in engagement with younger demographics and a successful launch of their new digital wealth platform.
+            This case study demonstrates our capability in high-end lifestyle production, where every frame is strategically designed to communicate authority and desire.
         `,
-        coverImage: heroBg,
-        galleryImages: [missionVisual, heroBg],
-        videoUrl: null,
-        videoFile: null,
-        outcomes: [
-            'Repositioned brand identity',
-            'Developed "Trust in Motion" framework',
-            'Launched digital wealth campaign'
+        coverImage: bruxImg25,
+        galleryImages: [
+            bruxImg12, bruxImg13, bruxImg14, bruxImg15,
+            bruxImg16, bruxImg17, bruxImg18, bruxImg19,
+            bruxImg20, bruxImg21, bruxImg22, bruxImg23,
+            bruxImg24, bruxImg25, bruxImg26, bruxImg27,
+            bruxImg28, bruxImg29, bruxImg30, bruxImg31,
+            bruxImg32, bruxImg33, bruxImg34, bruxImg35,
+            bruxImg36, bruxImg37, bruxImg38,
+            bruxImg1, bruxImg2, bruxImg3, bruxImg4,
+            bruxImg5, bruxImg6, bruxImg7, bruxImg8,
+            bruxImg9, bruxImg10, bruxImg11
         ],
-        scope: 'Brand Strategy, Public Relations, Digital Campaign'
+        videoUrl: null,
+        videoFile: bruxVid1,
+        outcomes: [
+            'High-fidelity visual asset library',
+            'Sensory-driven narrative strategy',
+            'Lifestyle and culinary positioning'
+        ],
+        scope: 'Photography, Video Production, Creative Direction'
     },
     {
-        id: 'cultural-diplomacy-campaign',
-        title: 'Cultural Diplomacy Initiative',
-        shortDescription: 'A multi-channel campaign to elevate national soft power through art and heritage.',
+        id: 'sigiriya-hornets',
+        title: 'Sigiriya Hornets',
+        shortDescription: 'Capturing the raw energy and discipline of the Sigiriya Hornets through dynamic motion.',
         fullDescription: `
-            Ananta was commissioned to design a multimedia campaign showcasing the rich cultural heritage of a developing nation to a global audience.
+            The Sigiriya Hornets represent more than just a team; they embody a spirit of resilience and collective drive. Our visual documentation focuses on this kinetic energy.
             
-            By moving beyond traditional tourism tropes and focusing on contemporary art and living heritage, we curated a series of digital exhibitions, documentary shorts, and influencer partnerships that highlighted the country's modern creative economy.
-            
-            The campaign reached over 2 million viewers globally and was featured in major international art publications.
+            Through a series of raw, unscripted video captures, we documented the intensity of their practice and the camaraderie that fuels their performance. This project strips away the polish to reveal the authentic grit of the sport.
         `,
-        coverImage: missionVisual,
-        galleryImages: [heroBg, missionVisual],
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Placeholder
-        videoFile: null,
-        outcomes: [
-            '2M+ Global Reach',
-            'Featured in ArtForum & Monocle',
-            'Increased cultural tourism interest'
+        coverImage: missionVisual, // Placeholder as no images were found
+        galleryImages: [],
+        galleryVideos: [
+            sigiriyaVid1, sigiriyaVid2, sigiriyaVid3,
+            sigiriyaVid5, sigiriyaVid6,
+            sigiriyaVid7, sigiriyaVid8
         ],
-        scope: 'Creative Direction, Video Production, Media Buying'
-    },
-    {
-        id: 'tech-leadership-summit',
-        title: 'Future Tech Leadership Summit',
-        shortDescription: 'Curating the conversation for the next decade of ethical technology.',
-        fullDescription: `
-            We managed the narrative and content strategy for a global summit focused on ethical AI and sustainable technology.
-            
-            Our role involved refining the core themes, coaching keynote speakers to deliver compelling narratives, and managing real-time media relations during the event. We ensured that the complex technical discussions were accessible and impactful for a broader policy-making audience.
-        `,
-        coverImage: heroBg,
-        galleryImages: [missionVisual],
         videoUrl: null,
-        videoFile: null,
+        videoFile: sigiriyaVid7, // Using one of the clips as the main video
         outcomes: [
-            '150+ C-Level Attendees',
-            'Coverage in TechCrunch & Wired',
-            'Established ongoing policy working group'
+            'Sports documentation',
+            'Dynamic motion capture',
+            'Team narrative building'
         ],
-        scope: 'Event Narrative, Speaker Coaching, Media Relations'
+        scope: 'Videography, Documentary Coverage'
     },
     {
         id: 'valentina',
-        title: 'Valentina',
-        shortDescription: 'Project Valentina showcasing our latest multimedia work.',
+        title: 'Valentina by Winil Gems',
+        shortDescription: 'A cinematic exploration of luxury craftsmanship and timeless elegance.',
         fullDescription: `
-            A collection of visual narratives and digital storytelling for Valentina.
+            Valentina by Winil Gems stands as a testament to the art of fine jewelry. Our visual narrative captures the intricate details and the luminous quality of their collection, highlighting the precision and passion embedded in every piece.
             
-            This project features a series of high-impact video productions demonstrating our capability in creating immersive brand experiences.
+            Through a blend of high-definition cinematography and editorial photography, we crafted a brand presence that speaks to sophistication and enduring beauty. This project showcases our ability to translate the tangible allure of luxury goods into a digital experience that resonates with discerning audiences.
         `,
-        coverImage: heroBg, // Placeholder
-        galleryImages: [], // No images provided yet
-        videoUrl: null,
-        videoFile: valentina1,
-        galleryVideos: [valentina2, valentina3, valentina4, valentina5],
-        outcomes: [
-            'Multimedia Content Production',
-            'Brand Storytelling',
-            'Visual Identity'
+        coverImage: valImg3, // Selected an edited image for cover
+        galleryImages: [
+            valImg1, valImg2, valImg3, valImg4, valImg5,
+            valImg6, valImg7, valImg8, valImg9, valImg10,
+            valImg11, valImg12, valImg13, valImg14, valImg15
         ],
-        scope: 'Video Production, Creative Direction'
+        galleryVideos: [
+            valVidExtra1, valVidExtra2, valVidExtra3,
+            valentina1, valentina2, valentina3, valentina4, valentina5
+        ],
+        videoUrl: null,
+        videoFile: valVidExtra3, // Using one of the main optimized cuts
+        outcomes: [
+            'Luxury Brand Positioning',
+            'High-End Product Photography',
+            'Cinematic Campaign Production'
+        ],
+        scope: 'Creative Direction, Photography, Videography'
     }
 ];

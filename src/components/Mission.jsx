@@ -30,7 +30,7 @@ const Mission = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <p className="text-ananta-gold uppercase tracking-widest text-xs font-semibold mb-6">About Us</p>
+                        <p className="text-ananta-gold uppercase tracking-widest text-sm font-semibold mb-6">About Us</p>
                         <h2 className="text-4xl md:text-5xl font-serif mb-8 text-white">
                             Who Are <span className="text-ananta-gold">We?</span>
                         </h2>
@@ -44,22 +44,22 @@ const Mission = () => {
                         {/* Structured Points */}
                         <div className="space-y-8 border-l border-white/10 pl-6">
                             <div className="relative">
-                                <h4 className="text-ananta-gold uppercase tracking-wider text-xs font-semibold mb-2">Our Partnerships</h4>
-                                <p className="text-gray-400 text-base leading-relaxed font-light">
+                                <h4 className="text-ananta-gold uppercase tracking-wider text-sm font-semibold mb-2">Our Partnerships</h4>
+                                <p className="text-gray-400 text-lg leading-relaxed font-light">
                                     We partner with institutions, leaders, and brands that view media not as content, but as a tool for positioning, trust, and lasting credibility.
                                 </p>
                             </div>
 
                             <div className="relative">
-                                <h4 className="text-ananta-gold uppercase tracking-wider text-xs font-semibold mb-2">Our Focus</h4>
-                                <p className="text-gray-400 text-base leading-relaxed font-light">
+                                <h4 className="text-ananta-gold uppercase tracking-wider text-sm font-semibold mb-2">Our Focus</h4>
+                                <p className="text-gray-400 text-lg leading-relaxed font-light">
                                     We build communication systems designed to endure. We prioritize strategy, creative direction, and media execution that lasts across periods of change.
                                 </p>
                             </div>
 
                             <div className="relative">
-                                <h4 className="text-ananta-gold uppercase tracking-wider text-xs font-semibold mb-2">Our Discipline</h4>
-                                <p className="text-gray-400 text-base leading-relaxed font-light">
+                                <h4 className="text-ananta-gold uppercase tracking-wider text-sm font-semibold mb-2">Our Discipline</h4>
+                                <p className="text-gray-400 text-lg leading-relaxed font-light">
                                     From inception to long-term management, we treat media as a discipline defined by clarity, intention, and restraint.
                                 </p>
                             </div>
@@ -82,7 +82,7 @@ const Mission = () => {
 
                         <div className="space-y-6 text-gray-300 font-light leading-relaxed">
                             <p>
-                                With over a decade of experience in media and strategic communication, Kavisha founded Ananta to provide narrative architecture that transcends traditional PR. Having worked with global brands and political figures, he understands that true influence is not about volume - it is about precision.
+                                Ananta was founded to address the limitations of traditional public relations and to offer a more disciplined approach to influence. Rather than prioritising scale or frequency, the firm focuses on narrative architecture which is strategically designed communication systems that emphasise clarity, positioning, and long-term credibility.
                             </p>
                         </div>
                     </motion.div>

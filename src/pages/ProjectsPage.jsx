@@ -44,7 +44,7 @@ const ProjectsPage = () => {
                                         <img
                                             src={project.coverImage}
                                             alt={project.title}
-                                            className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700"
+                                            className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
                                         />
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
 

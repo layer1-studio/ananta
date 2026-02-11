@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 const MaintainedPage = () => {
     return (
         <div className="pt-24 min-h-screen bg-ananta-bg text-white">
-            <SEO title="Maintained Client Pages" description="A directory of active digital properties and narratives currently managed by Ananta." />
+            <SEO title="Client Pages" description="A directory of active digital properties and narratives currently managed by Ananta." />
             {/* Header */}
             <section className="py-20 px-6 max-w-7xl mx-auto">
                 <motion.div
@@ -15,9 +15,9 @@ const MaintainedPage = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <p className="text-ananta-gold uppercase tracking-widest text-xs font-semibold mb-6">Portfolio Maintenance</p>
+                    <p className="text-ananta-gold uppercase tracking-widest text-xs font-semibold mb-6">Portfolio Index</p>
                     <h1 className="text-4xl md:text-6xl font-serif text-white mb-8">
-                        Maintained <span className="text-ananta-gold italic">Pages</span>
+                        <span className="text-ananta-gold italic">Pages</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl font-light">
                         A directory of active digital properties and narratives currently managed by Ananta.
