@@ -98,25 +98,6 @@ const ProjectDetailPage = () => {
                             <div className="mt-20">
                                 <h3 className="text-ananta-gold uppercase tracking-widest text-xs font-bold mb-8">Project Gallery</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    {/* Images */}
-                                    {project.galleryImages?.map((img, idx) => (
-                                        <motion.div
-                                            key={`img-${idx}`}
-                                            initial={{ opacity: 0, x: -30 }}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ duration: 0.6, delay: (idx % 2) * 0.1 }}
-                                            className="relative overflow-hidden aspect-[4/3] bg-gray-900/50"
-                                        >
-                                            <img
-                                                src={img}
-                                                alt={`Gallery ${idx + 1}`}
-                                                className="w-full h-full object-cover"
-                                                loading="lazy"
-                                            />
-                                        </motion.div>
-                                    ))}
-
                                     {/* Videos */}
                                     {project.galleryVideos?.map((vid, idx) => (
                                         <motion.div
@@ -136,6 +117,25 @@ const ProjectDetailPage = () => {
                                             >
                                                 Your browser does not support the video tag.
                                             </video>
+                                        </motion.div>
+                                    ))}
+
+                                    {/* Images */}
+                                    {project.galleryImages?.map((img, idx) => (
+                                        <motion.div
+                                            key={`img-${idx}`}
+                                            initial={{ opacity: 0, x: -30 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ duration: 0.6, delay: (idx % 2) * 0.1 }}
+                                            className="relative overflow-hidden aspect-[4/3] bg-gray-900/50"
+                                        >
+                                            <img
+                                                src={img}
+                                                alt={`Gallery ${idx + 1}`}
+                                                className="w-full h-full object-cover"
+                                                loading="lazy"
+                                            />
                                         </motion.div>
                                     ))}
                                 </div>

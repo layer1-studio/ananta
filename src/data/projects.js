@@ -53,6 +53,8 @@ const valVidExtra3 = valentina3;
 import bruxVid1 from '../assets/projects/BruxWaffles/brux1.mov';
 import bruxVid2 from '../assets/projects/BruxWaffles/brux2.mov';
 import bruxVid3 from '../assets/projects/BruxWaffles/brux3.mov';
+import bruxVid4 from '../assets/projects/BruxWaffles/brux4.mov';
+import bruxVid5 from '../assets/projects/BruxWaffles/brux5.mov';
 
 // Import actual photos for Brux Waffles
 import bruxImg1 from '../assets/projects/BruxWaffles/Photos/058A7388-Enhanced-NR.JPG';
@@ -99,6 +101,10 @@ import bruxImg38 from '../assets/projects/BruxWaffles/Photos/20260129_141918.jpg
 // import sigiriyaVid1 from '../assets/projects/SigiriyaHornets/sigiriya1.mp4'; // Excluded (112MB)
 import sigiriyaVid2 from '../assets/projects/SigiriyaHornets/sigiriya2.mp4';
 import sigiriyaVid3 from '../assets/projects/SigiriyaHornets/sigiriya3.mp4';
+import sigiriyaVid4 from '../assets/projects/SigiriyaHornets/sigiriya4.mp4';
+import sigiriyaVid5 from '../assets/projects/SigiriyaHornets/sigiriya5.mp4';
+import sigiriyaVid6 from '../assets/projects/SigiriyaHornets/sigiriya6.mp4';
+import sigiriyaVid7 from '../assets/projects/SigiriyaHornets/sigiriya7.mp4';
 
 const sigiriyaVid1 = sigiriyaVid2; // Use Vid2 as placeholder for Vid1
 
@@ -130,7 +136,7 @@ export const projects = [
         videoUrl: null,
         videoFile: bruxVid1,
         galleryVideos: [
-            bruxVid1, bruxVid2, bruxVid3
+            bruxVid1, bruxVid2, bruxVid3, bruxVid4, bruxVid5
         ],
         outcomes: [
             'High-fidelity visual asset library',
@@ -151,7 +157,7 @@ export const projects = [
         coverImage: missionVisual, // Placeholder as no images were found
         galleryImages: [],
         galleryVideos: [
-            sigiriyaVid2, sigiriyaVid3
+            sigiriyaVid2, sigiriyaVid3, sigiriyaVid4, sigiriyaVid5, sigiriyaVid6, sigiriyaVid7
         ],
         videoUrl: null,
         videoFile: sigiriyaVid1, // Using one of the clips as the main video
