@@ -12,12 +12,9 @@
  *    - thumbnail: Imported image variable.
  */
 
-// Placeholder images using existing assets
-import heroBg from '../assets/hero-bg.png';
-import missionVisual from '../assets/mission-visual.png';
-
-const empowerImg = heroBg;
-const economistImg = missionVisual;
+// Real assets from pages folder
+import empowerImg from '../assets/pages/empower.jpg';
+import economistImg from '../assets/pages/economist.jpg';
 
 export const maintainedPages = [
     {
