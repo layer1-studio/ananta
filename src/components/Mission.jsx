@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import missionVisual from '../assets/mission-visual.png';
+import founderImg from '../assets/founder.png';
 
 const Mission = () => {
     return (
@@ -85,6 +86,18 @@ const Mission = () => {
                                 Ananta was founded to address the limitations of traditional public relations and to offer a more disciplined approach to influence. Rather than prioritising scale or frequency, the firm focuses on narrative architecture which is strategically designed communication systems that emphasise clarity, positioning, and long-term credibility.
                             </p>
                         </div>
+                    </motion.div>
+
+                    {/* Founder Image Column */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: 0.3 }}
+                        className="relative hidden lg:block"
+                    >
+                        <div className="absolute inset-0 border border-ananta-gold/20 translate-x-4 translate-y-4"></div>
+                        <img src={founderImg} alt="Kavisha Ratnayaka" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 opacity-90" />
                     </motion.div>
                 </div>
             </div>
