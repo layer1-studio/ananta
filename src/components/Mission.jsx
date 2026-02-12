@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import missionVisual from '../assets/mission-visual.png';
-import founderImg from '../assets/founder.png';
+import founderImg from '../assets/founder.jpg';
 
 const Mission = () => {
     return (
