@@ -8,6 +8,11 @@ const ContactForm = () => {
         subject: '',
         message: ''
     });
+    const [status, setStatus] = useState({
+        submitting: false,
+        submitted: false,
+        error: null
+    });
 
     const handleChange = (e) => {
         setFormData({
@@ -16,13 +21,35 @@ const ContactForm = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const { name, email, subject, message } = formData;
+        setStatus({ submitting: true, submitted: false, error: null });
 
-        const mailtoLink = `mailto:Ananta.internal@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/studio.layer1@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    ...formData,
+                    _subject: `New Inquiry: ${formData.subject}`,
+                    _template: 'table'
+                })
+            });
 
-        window.location.href = mailtoLink;
+            if (response.ok) {
+                setStatus({ submitting: false, submitted: true, error: null });
+                setFormData({ name: '', email: '', subject: '', message: '' });
+                // Reset success message after 5 seconds
+                setTimeout(() => setStatus(prev => ({ ...prev, submitted: false })), 5000);
+            } else {
+                throw new Error('Failed to send inquiry.');
+            }
+        } catch (err) {
+            setStatus({ submitting: false, submitted: false, error: 'There was an error sending your message. Please try again or email us directly.' });
+        }
     };
 
     return (
@@ -106,14 +133,39 @@ const ContactForm = () => {
                         />
                     </div>
 
+                    {/* Status Messages */}
+                    <div className="mb-6 h-6">
+                        {status.submitted && (
+                            <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                className="text-ananta-gold text-sm font-medium tracking-wide"
+                            >
+                                Thank you. Your inquiry has been sent successfully.
+                            </motion.p>
+                        )}
+                        {status.error && (
+                            <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                className="text-red-400 text-sm font-medium tracking-wide"
+                            >
+                                {status.error}
+                            </motion.p>
+                        )}
+                    </div>
+
                     {/* Submit Button */}
-                    <div className="pt-8 text-center">
+                    <div className="pt-2 text-center">
                         <button
                             type="submit"
-                            className="group relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-serif tracking-tighter text-white bg-transparent border border-white/20 hover:border-ananta-gold transition-colors duration-500"
+                            disabled={status.submitting}
+                            className={`group relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-serif tracking-tighter text-white bg-transparent border ${status.submitting ? 'border-gray-600 cursor-not-allowed' : 'border-white/20 hover:border-ananta-gold'} transition-colors duration-500`}
                         >
                             <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-ananta-gold rounded-full group-hover:w-80 group-hover:h-80 opacity-10"></span>
-                            <span className="relative text-lg group-hover:text-ananta-gold transition-colors duration-300">Send Inquiry</span>
+                            <span className="relative text-lg group-hover:text-ananta-gold transition-colors duration-300">
+                                {status.submitting ? 'Sending...' : 'Send Inquiry'}
+                            </span>
                         </button>
                     </div>
                 </form>

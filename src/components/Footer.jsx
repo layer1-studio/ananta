@@ -8,9 +8,9 @@ const Footer = () => {
                 <h2 className="text-4xl md:text-6xl font-serif text-white mb-12">Let's Build <span className="italic text-ananta-gold">Presence</span></h2>
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-16">
-                    <a href="mailto:Ananta.internal@gmail.com" className="flex items-center text-gray-300 hover:text-ananta-gold transition-colors group">
+                    <a href="mailto:studio.layer1@gmail.com" className="flex items-center text-gray-300 hover:text-ananta-gold transition-colors group">
                         <Mail className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
-                        <span className="text-lg">Ananta.internal@gmail.com</span>
+                        <span className="text-lg">studio.layer1@gmail.com</span>
                     </a>
                     <a href="tel:+94777339119" className="flex items-center text-gray-300 hover:text-ananta-gold transition-colors group">
                         <Phone className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
