@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         ananta: {
-          bg: "#05120a", // Matches logo background exactly
+          bg: "#0b1e15", // Original Deep Forest Green
           gold: "#caab65", // Extracted Muted Gold
           silver: "#C0C0C0",
           text: "#F5F5F5",
