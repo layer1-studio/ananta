@@ -27,15 +27,7 @@ const Navbar = () => {
         { name: 'Work With Us', path: '/work-with-us' },
     ];
 
-    const isSolidPage = [
-        '/about',
-        '/philosophy',
-        '/services',
-        '/projects',
-        '/focus',
-        '/work-with-us',
-        '/maintained'
-    ].includes(location.pathname);
+    const isSolidPage = location.pathname !== '/';
 
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || isSolidPage ? 'bg-ananta-bg/95 backdrop-blur-md border-b border-white/10' : 'bg-transparent'}`}>
