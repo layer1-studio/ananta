@@ -22,7 +22,11 @@ const ProjectDetailPage = () => {
 
     return (
         <div className="bg-ananta-bg text-white min-h-screen">
-            <SEO title={project.title} description={project.shortDescription} />
+            <SEO
+                title={project.title}
+                description={project.shortDescription}
+                pathname={`/projects/${id}`}
+            />
             {/* Hero Section */}
             <div className="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
                 <img
@@ -132,7 +136,7 @@ const ProjectDetailPage = () => {
                                         >
                                             <img
                                                 src={img}
-                                                alt={`Gallery ${idx + 1}`}
+                                                alt={`${project.title} Gallery Image ${idx + 1}`}
                                                 className="w-full h-full object-cover"
                                                 loading="lazy"
                                             />

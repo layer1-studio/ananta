@@ -8,7 +8,11 @@ import SEO from '../components/SEO';
 const Home = () => {
     return (
         <div className="bg-ananta-bg text-white">
-            <SEO title="Home" description="Ananta is a media and narrative consultancy working at the intersection of strategy, culture, and influence." />
+            <SEO
+                title="Home"
+                description="Ananta is a media and narrative consultancy working at the intersection of strategy, culture, and influence."
+                pathname="/"
+            />
             <Hero />
 
             {/* Brief Introduction */}

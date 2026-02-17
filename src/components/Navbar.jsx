@@ -35,7 +35,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-24">
                     <div className="flex-shrink-0 flex items-center">
                         <Link to="/">
-                            <img src={logo} alt="Ananta" className="h-20 w-auto object-contain" />
+                            <img src={logo} alt="Ananta Collective Logo" className="h-20 w-auto object-contain" />
                         </Link>
                     </div>
 

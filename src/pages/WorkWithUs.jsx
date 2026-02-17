@@ -6,7 +6,11 @@ import ContactForm from '../components/ContactForm';
 const WorkWithUs = () => {
     return (
         <div className="pt-24 bg-ananta-bg min-h-screen">
-            <SEO title="Work With Us" description="Engagement models for brands and leaders requiring sustained narrative control." />
+            <SEO
+                title="Work With Us"
+                description="Engagement models for brands and leaders requiring sustained narrative control."
+                pathname="/work-with-us"
+            />
             <EngagementModels />
             <ContactForm />
         </div>

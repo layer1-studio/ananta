@@ -8,7 +8,7 @@ const Hero = () => {
         <section className="relative h-screen flex items-center justify-center overflow-hidden bg-ananta-bg">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
-                <img src={heroBg} alt="Background" className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
+                <img src={heroBg} alt="Ananta Collective - Media & Narrative Consultancy Background" className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
                 <div className="absolute inset-0 bg-gradient-to-b from-ananta-bg/90 via-ananta-bg/50 to-ananta-bg"></div>
             </div>
 
