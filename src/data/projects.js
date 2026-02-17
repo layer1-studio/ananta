@@ -28,25 +28,16 @@ import valentina3 from '../assets/projects/Valentina/valentina3.mp4';
 import valentina4 from '../assets/projects/Valentina/valentina4.mp4';
 import valentina5 from '../assets/projects/Valentina/valentina5.mp4';
 
-// Use placeholders for photos until they arrive
-const valImg1 = heroBg;
-const valImg2 = heroBg;
-const valImg3 = missionVisual;
-const valImg4 = heroBg;
-const valImg5 = missionVisual;
-const valImg6 = heroBg;
-const valImg7 = missionVisual;
-const valImg8 = heroBg;
-const valImg9 = missionVisual;
-const valImg10 = heroBg;
-const valImg11 = missionVisual;
-const valImg12 = heroBg;
-const valImg13 = missionVisual;
-const valImg14 = heroBg;
-const valImg15 = missionVisual;
+// Import actual photos for Valentina
+import valPhoto1 from '../assets/projects/Valentina/Photos/058A0402.jpg';
+import valPhoto2 from '../assets/projects/Valentina/Photos/058A0404.jpg';
+import valPhoto3 from '../assets/projects/Valentina/Photos/058A0409-Edit.jpg';
+import valPhoto4 from '../assets/projects/Valentina/Photos/058A0411-Edit.jpg';
+import valPhoto5 from '../assets/projects/Valentina/Photos/058A0413-Edit.jpg';
+import valPhoto6 from '../assets/projects/Valentina/Photos/058A0416-Edit.jpg';
+import valPhoto7 from '../assets/projects/Valentina/Photos/058A0634.jpg';
+import valPhoto8 from '../assets/projects/Valentina/Photos/058A0652.jpg';
 
-const valVidExtra1 = valentina4;
-const valVidExtra2 = valentina5;
 const valVidExtra3 = valentina3;
 
 // Brux Waffles Project Assets
@@ -96,7 +87,6 @@ import bruxImg36 from '../assets/projects/BruxWaffles/Photos/058A6965.JPG';
 import bruxImg37 from '../assets/projects/BruxWaffles/Photos/058A6966.JPG';
 import bruxImg38 from '../assets/projects/BruxWaffles/Photos/20260129_141918.jpg';
 
-
 // Sigiriya Hornets Project Assets
 // import sigiriyaVid1 from '../assets/projects/SigiriyaHornets/sigiriya1.mp4'; // Excluded (112MB)
 import sigiriyaVid2 from '../assets/projects/SigiriyaHornets/sigiriya2.mp4';
@@ -105,6 +95,9 @@ import sigiriyaVid4 from '../assets/projects/SigiriyaHornets/sigiriya4.mp4';
 import sigiriyaVid5 from '../assets/projects/SigiriyaHornets/sigiriya5.mp4';
 import sigiriyaVid6 from '../assets/projects/SigiriyaHornets/sigiriya6.mp4';
 import sigiriyaVid7 from '../assets/projects/SigiriyaHornets/sigiriya7.mp4';
+
+// Use a lifestyle image from BruxWaffles as a placeholder for Sigiriya Hornets cover
+import sigiriyaCover from '../assets/projects/SigiriyaHornets/sigiriya Hornets.png';
 
 const sigiriyaVid1 = sigiriyaVid2; // Use Vid2 as placeholder for Vid1
 
@@ -154,7 +147,7 @@ export const projects = [
             
             Through a series of raw, unscripted video captures, we documented the intensity of their practice and the camaraderie that fuels their performance. This project strips away the polish to reveal the authentic grit of the sport.
         `,
-        coverImage: missionVisual, // Placeholder as no images were found
+        coverImage: sigiriyaCover, // Using lifestyle placeholder as cover
         galleryImages: [],
         galleryVideos: [
             sigiriyaVid2, sigiriyaVid3, sigiriyaVid4, sigiriyaVid5, sigiriyaVid6, sigiriyaVid7
@@ -177,8 +170,11 @@ export const projects = [
             
             Through a blend of high-definition cinematography and editorial photography, we crafted a brand presence that speaks to sophistication and enduring beauty. This project showcases our ability to translate the tangible allure of luxury goods into a digital experience that resonates with discerning audiences.
         `,
-        coverImage: missionVisual, // Using visual as no images found
-        galleryImages: [],
+        coverImage: valPhoto1, // Using actual photo
+        galleryImages: [
+            valPhoto1, valPhoto2, valPhoto3, valPhoto4,
+            valPhoto5, valPhoto6, valPhoto7, valPhoto8
+        ], // Added photos to gallery
         galleryVideos: [
             valentina1, valentina2, valentina4, valentina5
         ],
