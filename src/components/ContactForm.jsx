@@ -5,6 +5,7 @@ const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        phone: '',
         subject: '',
         message: ''
     });
@@ -41,7 +42,7 @@ const ContactForm = () => {
 
             if (response.ok) {
                 setStatus({ submitting: false, submitted: true, error: null });
-                setFormData({ name: '', email: '', subject: '', message: '' });
+                setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
                 // Reset success message after 5 seconds
                 setTimeout(() => setStatus(prev => ({ ...prev, submitted: false })), 5000);
             } else {
@@ -99,6 +100,20 @@ const ContactForm = () => {
                                 required
                                 className="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-ananta-gold transition-colors placeholder-white/10"
                                 placeholder="your@email.com"
+                            />
+                        </div>
+
+                        {/* Phone Input */}
+                        <div className="space-y-2">
+                            <label htmlFor="phone" className="text-xs uppercase tracking-widest text-ananta-gold font-semibold">Contact Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                className="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-ananta-gold transition-colors placeholder-white/10"
+                                placeholder="+94 77 000 0000"
                             />
                         </div>
                     </div>
