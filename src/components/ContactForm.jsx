@@ -26,7 +26,7 @@ const ContactForm = () => {
         setStatus({ submitting: true, submitted: false, error: null });
 
         try {
-            const response = await fetch("https://formsubmit.co/ajax/studio.layer1@gmail.com", {
+            const response = await fetch("https://formsubmit.co/ajax/ananta.internal@gmail.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
