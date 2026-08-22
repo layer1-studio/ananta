@@ -55,10 +55,24 @@
   transform: rotateY(180deg);
 }
 
-/* 
+/*
    Explicitly handle the hover state for the flip effect.
    This bypasses the need for Tailwind's group-hover variant configuration for custom classes.
 */
 .group:hover .rotate-y-180-hover {
   transform: rotateY(180deg);
+}
+
+/* Marquee ticker */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

@@ -128,12 +128,12 @@ const ProjectDetailPage = () => {
                                             whileInView={{ opacity: 1, x: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ duration: 0.6, delay: (idx % 2) * 0.1 }}
-                                            className="relative overflow-hidden aspect-[4/3] bg-gray-900/50"
+                                            className="relative overflow-hidden bg-gray-900/50 flex items-center justify-center h-[420px]"
                                         >
                                             <img
                                                 src={img}
                                                 alt={`Gallery ${idx + 1}`}
-                                                className="w-full h-full object-cover"
+                                                className="max-w-full max-h-full w-auto h-auto object-contain"
                                                 loading="lazy"
                                             />
                                         </motion.div>
